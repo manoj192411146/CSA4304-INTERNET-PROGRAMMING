@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedCare Hospital</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="brand">MedCare Hospital</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#modules">Modules</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<button class="login" onclick="openLogin()">Login</button>
+</nav>
+</header>
+<main>
+<section class="hero" id="home">
+<div>
+<span class="tag">INTERNET PROGRAMMING LAB</span>
+<h1>MedCare Hospital</h1>
+<p>A responsive web application for managing services, users, records and transactions.</p>
+<div class="actions">
+<button onclick="document.getElementById('modules').scrollIntoView()">Explore Modules</button>
+<button class="secondary" onclick="openLogin()">User Login</button>
+</div>
+</div>
+<div class="hero-box">
+<div class="stat"><strong>5</strong><span>Modules</span></div>
+<div class="stat"><strong>24×7</strong><span>Access</span></div>
+<div class="stat"><strong>100%</strong><span>Responsive</span></div>
+</div>
+</section>
+<section id="modules">
+<h2>System Modules</h2>
+<div class="grid">
+<article class="card">
+<h3>Doctors</h3>
+<p>Manage and explore doctors through this module.</p>
+<button onclick="openModule('Doctors')">Open</button>
+</article><article class="card">
+<h3>Appointments</h3>
+<p>Manage and explore appointments through this module.</p>
+<button onclick="openModule('Appointments')">Open</button>
+</article><article class="card">
+<h3>Check-in</h3>
+<p>Manage and explore check-in through this module.</p>
+<button onclick="openModule('Check-in')">Open</button>
+</article><article class="card">
+<h3>History</h3>
+<p>Manage and explore history through this module.</p>
+<button onclick="openModule('History')">Open</button>
+</article><article class="card">
+<h3>Admin</h3>
+<p>Manage and explore admin through this module.</p>
+<button onclick="openModule('Admin')">Open</button>
+</article>
+</div>
+</section>
+<section class="panel">
+<h2>Quick Action</h2>
+<div class="form-grid">
+<label>Module<select id="moduleSelect"><option>Doctors</option><option>Appointments</option><option>Check-in</option><option>History</option><option>Admin</option></select></label>
+<label>Name<input id="userName" placeholder="Enter your name"></label>
+<label>Details<input id="details" placeholder="Enter required details"></label>
+<button onclick="submitAction()">Submit</button>
+</div>
+<div id="result" class="result"></div>
+</section>
+<section id="about" class="info">
+<h2>About</h2>
+<p>MedCare Hospital provides a simple interface for users and administrators to manage the major operations described in the laboratory experiment.</p>
+</section>
+<section id="contact" class="info">
+<h2>Contact</h2>
+<p>Email: support@example.com</p>
+<p>Phone: +91 98765 43210</p>
+</section>
+</main>
+<footer>MedCare Hospital © 2026</footer>
+<div id="modal" class="modal">
+<div class="modal-box">
+<button class="close" onclick="closeModal()">×</button>
+<h2 id="modalTitle">Login</h2>
+<form onsubmit="login(event)">
+<input id="loginUser" placeholder="Username" required>
+<input id="loginPass" type="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+<p id="loginMessage"></p>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
