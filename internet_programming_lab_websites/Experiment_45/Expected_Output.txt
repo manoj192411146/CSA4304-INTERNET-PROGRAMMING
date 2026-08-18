@@ -1,0 +1,4 @@
+Using the sample values, the output is Net Taxable Income = ₹470000 and Tax = ₹11000.
+
+Note
+The uploaded source has a duplicate experiment number around the Event Page: ArtistryHub is numbered 28 and the following Event Page is also numbered 28. It is labeled Experiment 29 here only to preserve the requested continuous sequence 25–45.

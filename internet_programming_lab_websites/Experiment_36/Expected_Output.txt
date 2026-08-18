@@ -1,0 +1,1 @@
+Displays course catalog and student registration form.

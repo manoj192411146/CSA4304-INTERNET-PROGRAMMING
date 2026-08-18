@@ -1,0 +1,1 @@
+Displays recipe search, popular recipes, ingredients, steps, and rating button.

@@ -1,0 +1,1 @@
+Shows bookstore navigation, book catalog, authors, prices, and cart.

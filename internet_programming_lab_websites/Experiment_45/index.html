@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html><head><title>Income Tax Calculator</title></head>
+<body>
+<h1>Income Tax Calculator</h1>
+Annual Salary: ₹<input id="salary" type="number" value="600000"><br><br>
+HRA: ₹<input id="hra" type="number" value="50000"><br><br>
+Pension: ₹<input id="pension" type="number" value="20000"><br><br>
+Health Insurance: ₹<input id="health" type="number" value="10000"><br><br>
+<button onclick="tax()">Calculate Tax</button><h2 id="result"></h2>
+<script>
+function tax(){
+let s=Number(salary.value),h=Number(hra.value),p=Math.min(Number(pension.value),150000),i=Number(health.value);
+let n=s-h-50000-p-i,t=0;
+if(n<=250000)t=0;else if(n<=500000)t=(n-250000)*.05;else if(n<=1000000)t=12500+(n-500000)*.20;else t=112500+(n-1000000)*.30;
+result.innerHTML="Net Taxable Income = ₹"+n+"<br>Tax = ₹"+t;
+}
+</script></body></html>

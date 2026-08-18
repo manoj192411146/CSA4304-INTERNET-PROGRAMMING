@@ -1,0 +1,1 @@
+Shows painting rating and review controls; after submission a confirmation message appears.

@@ -1,0 +1,1 @@
+Displays journal navigation and author/reviewer sections.

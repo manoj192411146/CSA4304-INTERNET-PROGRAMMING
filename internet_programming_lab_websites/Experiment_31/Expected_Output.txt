@@ -1,0 +1,1 @@
+Displays dairy products, prices, and stock entry.

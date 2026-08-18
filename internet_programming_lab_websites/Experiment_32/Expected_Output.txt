@@ -1,0 +1,1 @@
+Displays laptop models, configurations, prices, and service center information.

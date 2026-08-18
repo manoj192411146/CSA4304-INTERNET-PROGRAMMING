@@ -1,0 +1,1 @@
+After clicking Submit Exam, the sample output is Exam submitted successfully. Score: 10/10.

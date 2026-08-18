@@ -1,0 +1,1 @@
+Displays product search, product list, Add to Cart buttons, and cart.

@@ -1,0 +1,1 @@
+Shows restaurant booking form and an available restaurant.

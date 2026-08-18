@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><title>Electricity Bill</title></head>
+<body>
+<h1>Electricity Bill Calculator</h1>
+<select id="type"><option value="domestic">Domestic</option><option value="commercial">Commercial</option></select><br><br>
+Units: <input id="units" type="number" value="150"><br><br>
+<button onclick="calc()">Calculate Bill</button><h2 id="result"></h2>
+<script>
+function calc(){
+let u=Number(document.getElementById("units").value);
+let type=document.getElementById("type").value;
+let rate=type=="domestic"?(u<=100?1:u<=200?2.5:u<=500?4:6):(u<=100?2:u<=200?4.5:u<=500?6:7);
+document.getElementById("result").innerHTML="Estimated Bill = ₹"+(u*rate);
+}
+</script></body></html>

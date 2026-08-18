@@ -1,0 +1,1 @@
+Displays a vehicle assistance form with name, location, vehicle type, a Search Mechanic button, and nearby mechanics.

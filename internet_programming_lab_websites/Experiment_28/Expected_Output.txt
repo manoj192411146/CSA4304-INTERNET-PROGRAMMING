@@ -1,0 +1,1 @@
+Shows an artist portfolio with biography, collections, and contact details.

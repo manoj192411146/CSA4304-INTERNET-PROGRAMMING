@@ -1,0 +1,1 @@
+Shows a Traffic Squad page with vehicle number and challan/fine details.

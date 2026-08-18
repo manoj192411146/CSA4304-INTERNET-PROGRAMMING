@@ -1,0 +1,1 @@
+Shows tuition announcements, subject duration, fees, and registration.
